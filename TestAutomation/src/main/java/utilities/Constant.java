@@ -23,5 +23,5 @@ public class Constant extends TestBase{
 	public static final String firefoxDriverName="geckodriver.exe";
 	public static final String pathTestData="D://Selenium_Workspace//TestAutomation//src//main//java//testdata//";
 	public static final String fileTestData="TestData.xlsx";
-	public static final String userName="Siva";
+	public static final String userName="siva";
 }
