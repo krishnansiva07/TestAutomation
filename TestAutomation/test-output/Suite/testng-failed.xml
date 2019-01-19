@@ -5,11 +5,10 @@
     <classes>
       <class name="com.automationpractice.test.NewTest">
         <methods>
-          <include name="logOff2"/>
-          <include name="logOff1"/>
+          <include name="checkStatus"/>
+          <include name="tearDown"/>
           <include name="idDispalyed"/>
           <include name="setUpReport"/>
-          <include name="f"/>
         </methods>
       </class> <!-- com.automationpractice.test.NewTest -->
     </classes>
