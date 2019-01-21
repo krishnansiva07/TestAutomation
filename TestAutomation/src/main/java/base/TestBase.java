@@ -23,9 +23,7 @@ public class TestBase {
 
 	public TestBase() throws Exception {
 		// TODO Auto-generated constructor stub
-		Log.startLog("Constructor stared");
-		Log.info("Loading TestData spread sheet reading the testdata");
-	}
+		}
 
 	public static void initialization() throws Exception {
 
