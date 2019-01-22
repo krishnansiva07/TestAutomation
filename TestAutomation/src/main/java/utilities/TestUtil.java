@@ -88,15 +88,15 @@ public class TestUtil extends TestBase {
 		logger = extent.startTest("passTest");
 	}
 
-	public static void checkStatus(ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.FAILURE) {
+	public static void checkStatus(org.testng.ITestResult result) throws IOException {
+		if (result.getStatus() == org.testng.ITestResult.FAILURE) {
 			String screenshotPath=TestUtil.takeScreenshotAtEndOfTest(result.getName());
 			logger.log(LogStatus.FAIL,
 					logger.addScreenCapture(screenshotPath));
 			logger.log(LogStatus.FAIL,
 					"Test Case Failed is " + result.getThrowable());
 
-		} else if (result.getStatus() == ITestResult.SKIP) {
+		} else if (result.getStatus() == org.testng.ITestResult.SKIP) {
 			String screenshotPath=TestUtil.takeScreenshotAtEndOfTest(result.getName());
 			logger.log(LogStatus.SKIP,
 					logger.addScreenCapture(screenshotPath));
