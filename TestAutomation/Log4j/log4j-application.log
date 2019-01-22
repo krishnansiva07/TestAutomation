@@ -573,3 +573,12 @@
 2019-01-20 11:49:37 INFO  Log:21 - After loading Config.xml
 2019-01-20 11:49:39 INFO  Log:21 - After Reading Browser Name from TestData Excel
 2019-01-20 11:49:57 INFO  Log:21 - Launching the Chrome Browser
+2019-01-22 06:00:15 INFO  Log:16 - Test is Ending...
+2019-01-22 06:00:15 INFO  Log:11 - Test is Starting...
+2019-01-22 06:00:15 INFO  Log:21 - Before Starting the Extent Report
+2019-01-22 06:00:15 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-22 06:00:16 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-22 06:00:16 INFO  Log:21 - After Adding System Info
+2019-01-22 06:00:16 INFO  Log:21 - After loading Config.xml
+2019-01-22 06:00:18 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-22 06:00:37 INFO  Log:21 - Launching the Chrome Browser
