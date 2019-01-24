@@ -6,9 +6,13 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import org.testng.*;
+import java.util.List;
 
+import org.testng.*;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 //import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 //import org.apache.poi.ss.usermodel.Sheet;
 //import org.apache.poi.ss.usermodel.Workbook;
@@ -17,11 +21,13 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.*;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import com.thoughtworks.selenium.webdriven.commands.KeyEvent;
 
 import base.TestBase;
 
@@ -29,6 +35,7 @@ public class TestUtil extends TestBase {
 
 	public TestUtil() throws Exception {
 		super();
+		action=new Actions(driver);
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -103,5 +110,61 @@ public class TestUtil extends TestBase {
 		}
 		extent.endTest(logger);
 	}
+	
+	public boolean checkElementIsPresent(WebElement element)
+	{
+		boolean res=element.isEnabled();
+		return res;
+	}
+	public void scrollDown(int noOfKeyDown)
+	{
+		for(int i=1;i<=noOfKeyDown;i++)
+		{
+			Log.info("Scrolling Down");
+			action.sendKeys(Keys.ARROW_DOWN);
+		}
+	}
+	
+	public void performMouseHover(WebElement element)
+	{
+		Log.info("Mouse Hovering");		
+		action.moveToElement(element).build().perform();
+	}
+	public void performMouseHoverWithClick(WebElement element)
+	{
+		Log.info("Mouse Hovering");		
+		action.moveToElement(element)
+			  .click().build().perform();
+	}
+	
+	public void javaScriptExecutorClick(WebElement element,WebDriver driver)
+	{
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);
+	}
+	
+	//Perform mouse hover on the element by index
+	public void moveToListIndex(WebDriver driver,String xpath,int index)
+	{
+		Log.info("Entering to the movetoListIndex");
+		scrollDown(23);
+		WebElement ulElement=driver.findElement(By.xpath(xpath));
+		List<WebElement> liElements=ulElement.findElements(By.tagName("li"));
+		if(checkElementIsPresent(liElements.get(index-1)))
+		{
+		performMouseHover(liElements.get(index-1));	
+		}
+	}
 
+	public void clickAddToCartByImageIndex(int index,WebDriver driver)
+	{
+		//String xpathAddToCartByIndex="//*[@id='homefeatured']/li['+index+']/div/div[2]/div[2]/a[1]";
+		String xpathAddToCartByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[1]/img";
+		WebElement element = driver.findElement(By.xpath(xpathAddToCartByIndex));
+		performMouseHoverWithClick(element);
+		
+	}
+	
+	
+	
 }

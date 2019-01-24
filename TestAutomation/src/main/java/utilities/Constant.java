@@ -24,4 +24,19 @@ public class Constant extends TestBase{
 	public static final String pathTestData="D://TestAutomation//TeatAutomation//TestAutomation//src//main//java//testdata//";
 	public static final String fileTestData="TestData.xlsx";
 	public static final String userName="siva";
+	
+	//Index page
+	public static final String xpathIndexPageHomeFeaturedProductUnorderedList="//*[@id='homefeatured']";
+	public static final int addToCartButton1=1;
+	public static final int addToCartButton2=2;
+	public static final int addToCartButton3=3;
+	public static final int addToCartButton4=4;
+	public static final int addToCartButton5=5;
+	public static final int addToCartButton6=6;
+	public static final int addToCartButton7=7;
+	public static final int addToCartButton8=8;
+			
+	
+	
+	
 }

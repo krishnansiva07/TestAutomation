@@ -11,7 +11,7 @@ import base.TestBase;
 
 public class GuestUserCheckoutTestSuite extends TestBase{
 	
-	APIndexPage index;
+	APIndexPage indexPage;
 	public GuestUserCheckoutTestSuite() throws Exception
 	{
 		super();
@@ -22,14 +22,15 @@ public class GuestUserCheckoutTestSuite extends TestBase{
 	{
 		TestUtil.startReport();
 		Log.info("Extent Repeort Started");
-		super.initialization();
+		driver=super.initialization();
+		indexPage=new APIndexPage(driver);
 	}
 	
 	@Test
-	public void test_10002_VerifyThetUserCanAbleToClickAddToCartButtonAndConfirm() throws Exception
+	public void test_10002_VerifyThetUserCanAbleToClickItem() throws Exception
 	{
-		index=new APIndexPage();
-		Log.info("Creation od Index Page class");
+		Log.info("Creation on Index Page class");
+		indexPage.selectItem(1,driver);	
 		
 	}
 	

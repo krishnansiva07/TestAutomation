@@ -1,10 +1,13 @@
 package base;
 
+import java.awt.Robot;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -18,14 +21,17 @@ public class TestBase {
 	public static WebDriver driver;
 	public static ExtentReports extent;
 	public static ExtentTest logger;
-
+	public static WebElement element;
+	public static Actions action;
+	public static TestUtil util;
+	public static Robot robot;
 	// public static Logger log;
 
 	public TestBase() throws Exception {
 		// TODO Auto-generated constructor stub
 		}
 
-	public static void initialization() throws Exception {
+	public static WebDriver initialization() throws Exception {
 
 		String browserName = TestUtil.getBrowserName();
 		System.out.println("Browser Name" + browserName);
@@ -52,6 +58,6 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Constant.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constant.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+		return driver;
 	}
 }
