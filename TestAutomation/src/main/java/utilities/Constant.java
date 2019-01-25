@@ -35,8 +35,24 @@ public class Constant extends TestBase{
 	public static final int addToCartButton6=6;
 	public static final int addToCartButton7=7;
 	public static final int addToCartButton8=8;
-			
 	
+	public static final int item1=1;
+	public static final int item2=2;
+	public static final int item3=3;
+	public static final int item4=4;
+	public static final int item5=5;
+	public static final int item6=6;
+	public static final int item7=7;
+	public static final int item8=8;
+	
+	
+	public static final String xpathClickItemForQuickViewByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[1]/img";
+	public static final String xpathQuickViewItemPriceByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/div[2]/span";
+	public static final String xpathQuickViewITemNameByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[2]/h5/a";
+	
+			
+	public static final String nameOfItem1="Faded Short Sleeve T-shirts";
+	public static final String itemPrice1="$16.51";
 	
 	
 }

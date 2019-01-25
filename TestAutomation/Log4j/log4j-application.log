@@ -2130,3 +2130,49 @@
 2019-01-24 07:54:01 INFO  Log:21 - Launching the Chrome Browser
 2019-01-24 07:54:01 INFO  Log:21 - Creation on Index Page class
 2019-01-24 07:54:01 INFO  Log:21 - Mouse Hovering
+2019-01-25 06:49:44 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-25 06:49:45 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-25 06:49:45 INFO  Log:21 - After Adding System Info
+2019-01-25 06:49:45 INFO  Log:21 - After loading Config.xml
+2019-01-25 06:49:45 INFO  Log:21 - Extent Repeort Started
+2019-01-25 06:49:46 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-25 06:50:07 INFO  Log:21 - Launching the Chrome Browser
+2019-01-25 06:50:07 INFO  Log:21 - Creation on Index Page class
+2019-01-25 06:50:07 INFO  Log:21 - Mouse Hovering
+2019-01-25 06:51:47 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-25 06:51:47 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-25 06:51:47 INFO  Log:21 - After Adding System Info
+2019-01-25 06:51:47 INFO  Log:21 - After loading Config.xml
+2019-01-25 06:51:47 INFO  Log:21 - Extent Repeort Started
+2019-01-25 06:51:48 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-25 06:52:05 INFO  Log:21 - Launching the Chrome Browser
+2019-01-25 06:52:05 INFO  Log:21 - Creation on Index Page class
+2019-01-25 06:52:05 INFO  Log:21 - Mouse Hovering
+2019-01-25 07:01:20 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-25 07:01:21 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-25 07:01:21 INFO  Log:21 - After Adding System Info
+2019-01-25 07:01:21 INFO  Log:21 - After loading Config.xml
+2019-01-25 07:01:21 INFO  Log:21 - Extent Repeort Started
+2019-01-25 07:01:22 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-25 07:01:38 INFO  Log:21 - Launching the Chrome Browser
+2019-01-25 07:01:38 INFO  Log:21 - Creation on Index Page class
+2019-01-25 07:01:38 INFO  Log:21 - Mouse Hovering
+2019-01-25 07:50:03 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-25 07:50:04 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-25 07:50:04 INFO  Log:21 - After Adding System Info
+2019-01-25 07:50:04 INFO  Log:21 - After loading Config.xml
+2019-01-25 07:50:04 INFO  Log:21 - Extent Repeort Started
+2019-01-25 07:50:06 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-25 07:50:22 INFO  Log:21 - Launching the Chrome Browser
+2019-01-25 07:50:23 INFO  Log:21 - Creation on Index Page class
+2019-01-25 07:50:23 INFO  Log:21 - Mouse Hovering
+2019-01-25 07:52:25 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-25 07:52:26 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-25 07:52:26 INFO  Log:21 - After Adding System Info
+2019-01-25 07:52:26 INFO  Log:21 - After loading Config.xml
+2019-01-25 07:52:26 INFO  Log:21 - Extent Repeort Started
+2019-01-25 07:52:27 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-25 07:52:44 INFO  Log:21 - Launching the Chrome Browser
+2019-01-25 07:52:44 INFO  Log:21 - Creation on Index Page class
+2019-01-25 07:52:44 INFO  Log:21 - Mouse Hovering
+2019-01-25 07:52:44 INFO  Log:21 - Mouse Hovering

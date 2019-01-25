@@ -5,6 +5,7 @@ import java.io.File;
 //import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -111,6 +112,12 @@ public class TestUtil extends TestBase {
 		extent.endTest(logger);
 	}
 	
+	public WebElement findElementByXpath(String xpath)
+	{
+		element = driver.findElement(By.xpath(xpath));
+		return element;
+	}
+	
 	public boolean checkElementIsPresent(WebElement element)
 	{
 		boolean res=element.isEnabled();
@@ -156,12 +163,19 @@ public class TestUtil extends TestBase {
 		}
 	}
 
-	public void clickAddToCartByImageIndex(int index,WebDriver driver)
+	public List<String> clickAddToCartByImageIndexQuickView(int index,WebDriver driver)
 	{
-		//String xpathAddToCartByIndex="//*[@id='homefeatured']/li['+index+']/div/div[2]/div[2]/a[1]";
-		String xpathAddToCartByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[1]/img";
-		WebElement element = driver.findElement(By.xpath(xpathAddToCartByIndex));
+		element = findElementByXpath(Constant.xpathClickItemForQuickViewByIndex);
+		performMouseHover(element);
+		element =findElementByXpath(Constant.xpathQuickViewItemPriceByIndexMouseHover);
+		String price=element.getText();
+		element=findElementByXpath(Constant.xpathQuickViewITemNameByIndexMouseHover); 
+		String itemName=element.getText();
 		performMouseHoverWithClick(element);
+		List<String> itemList=new ArrayList<String>();
+		itemList.add(price);
+		itemList.add(itemName);
+		return itemList;
 		
 	}
 	
