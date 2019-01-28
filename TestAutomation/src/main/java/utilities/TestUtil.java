@@ -93,11 +93,15 @@ public class TestUtil extends TestBase {
 
 	public static void extentStartTest() {
 		Log.info("After strting the test");
-		logger = extent.startTest("passTest");
+		logger = extent.startTest("Checkout as Guest User");
 	}
 
+	//This method should be called after method
 	public static void checkStatus(org.testng.ITestResult result) throws IOException {
-		if (result.getStatus() == org.testng.ITestResult.FAILURE) {
+		if(result.getStatus() == org.testng.ITestResult.SUCCESS){
+			logger.log(LogStatus.PASS,result.getName());
+		}
+		else if (result.getStatus() == org.testng.ITestResult.FAILURE) {
 			String screenshotPath=TestUtil.takeScreenshotAtEndOfTest(result.getName());
 			logger.log(LogStatus.FAIL,
 					logger.addScreenCapture(screenshotPath));
@@ -123,14 +127,6 @@ public class TestUtil extends TestBase {
 		boolean res=element.isEnabled();
 		return res;
 	}
-	public void scrollDown(int noOfKeyDown)
-	{
-		for(int i=1;i<=noOfKeyDown;i++)
-		{
-			Log.info("Scrolling Down");
-			action.sendKeys(Keys.ARROW_DOWN);
-		}
-	}
 	
 	public void performMouseHover(WebElement element)
 	{
@@ -149,36 +145,69 @@ public class TestUtil extends TestBase {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
-	
-	//Perform mouse hover on the element by index
-	public void moveToListIndex(WebDriver driver,String xpath,int index)
+	//Perform scroll down
+	public void scrollDown()
 	{
-		Log.info("Entering to the movetoListIndex");
-		scrollDown(23);
-		WebElement ulElement=driver.findElement(By.xpath(xpath));
-		List<WebElement> liElements=ulElement.findElements(By.tagName("li"));
-		if(checkElementIsPresent(liElements.get(index-1)))
-		{
-		performMouseHover(liElements.get(index-1));	
-		}
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,1000)");
+
 	}
+	
+	
 
 	public List<String> clickAddToCartByImageIndexQuickView(int index,WebDriver driver)
 	{
+		//scrollDown();
+		element=findElementByXpath(Constant.xpathOfItemByIndex);
+		performMouseHover(element);
 		element = findElementByXpath(Constant.xpathClickItemForQuickViewByIndex);
 		performMouseHover(element);
 		element =findElementByXpath(Constant.xpathQuickViewItemPriceByIndexMouseHover);
 		String price=element.getText();
 		element=findElementByXpath(Constant.xpathQuickViewITemNameByIndexMouseHover); 
 		String itemName=element.getText();
+		element = findElementByXpath(Constant.xpathClickItemForQuickViewByIndex);
 		performMouseHoverWithClick(element);
 		List<String> itemList=new ArrayList<String>();
 		itemList.add(price);
 		itemList.add(itemName);
 		return itemList;
-		
 	}
 	
 	
+	
+	public void clickAddToCartButtonByMouseHoverByIndex(int index,String xpathString)
+	{
+		scrollDown();
+		element=driver.findElement(By.xpath(Constant.xpathOfItemByIndex));
+		performMouseHover(element);
+		element = driver.findElement(By.xpath(xpathString));
+		element.click();
+	}
+	
+	public boolean checkMouseHoveronAllItems(WebDriver driver)
+	{
+		String xpathOfItems =Constant.xpathOfItemByIndex;
+		String xpathOfAddToCartButtons=Constant.xpathAddToCartButtonByMouseHoverOnItemInIndexPage;
+		boolean res=false;
+		for(int index=Constant.addToCartButton1;index<=7;index++)
+		{
+			element=driver.findElement(By.xpath(xpathOfItems));
+			System.out.println(xpathOfItems+""+index+""+element.getText());
+			performMouseHover(element);
+			element=element.findElement(By.xpath(xpathOfAddToCartButtons));
+			System.out.println(xpathOfAddToCartButtons+""+index+""+element.getText());
+			if(element.isDisplayed())
+			{
+				res=true;
+				Log.info("Element is available");
+			}
+			else 
+			{
+				res=false;
+			}
+		}
+		return res;
+	}
 	
 }

@@ -45,11 +45,13 @@ public class Constant extends TestBase{
 	public static final int item7=7;
 	public static final int item8=8;
 	
-	
-	public static final String xpathClickItemForQuickViewByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[1]/img";
+	//Constant Selectors
+	public static final String xpathClickItemForQuickViewByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[2]/span";
 	public static final String xpathQuickViewItemPriceByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/div[2]/span";
 	public static final String xpathQuickViewITemNameByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[2]/h5/a";
-	
+	public static final String xpathOfItemByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[1]/img";
+	public static final String cssSelectorForQuickViewCloseButton="body#index div.fancybox-overlay.fancybox-overlay-fixed > div > div > a";
+	public static final String xpathAddToCartButtonByMouseHoverOnItemInIndexPage="//div[@class='button-container']/a[@title='Add to cart']";
 			
 	public static final String nameOfItem1="Faded Short Sleeve T-shirts";
 	public static final String itemPrice1="$16.51";
