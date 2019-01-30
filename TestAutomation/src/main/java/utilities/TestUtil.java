@@ -40,6 +40,11 @@ public class TestUtil extends TestBase {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public void setTestData(String Path,String fileNamw) throws Exception
+	{
+		ExcelUtils.setExcelFile(Constant.pathTestData+Constant.fileTestData,Constant.sheet2);
+	}
+	
 	public static String getBrowserName() throws Exception
 	{
 		ExcelUtils.setExcelFile(Constant.pathTestData+Constant.fileTestData,Constant.sheet2);
@@ -130,12 +135,12 @@ public class TestUtil extends TestBase {
 	
 	public void performMouseHover(WebElement element)
 	{
-		Log.info("Mouse Hovering");		
+		Log.info("Mouse Hovering without click");		
 		action.moveToElement(element).build().perform();
 	}
 	public void performMouseHoverWithClick(WebElement element)
 	{
-		Log.info("Mouse Hovering");		
+		Log.info("Mouse Hovering with click");		
 		action.moveToElement(element)
 			  .click().build().perform();
 	}
@@ -153,8 +158,6 @@ public class TestUtil extends TestBase {
 
 	}
 	
-	
-
 	public List<String> clickAddToCartByImageIndexQuickView(int index,WebDriver driver)
 	{
 		//scrollDown();
@@ -173,9 +176,7 @@ public class TestUtil extends TestBase {
 		itemList.add(itemName);
 		return itemList;
 	}
-	
-	
-	
+		
 	public void clickAddToCartButtonByMouseHoverByIndex(int index,String xpathString)
 	{
 		scrollDown();
@@ -185,18 +186,23 @@ public class TestUtil extends TestBase {
 		element.click();
 	}
 	
+	public int countNoOfItems(WebDriver driver)
+	{
+		WebElement itemsUlist = driver.findElement(By.xpath(Constant.xpathIndexPageHomeFeaturedProductUnorderedList));
+		List<WebElement> noOfItems=itemsUlist.findElements(By.tagName("li"));
+		return noOfItems.size();
+	}
+	
 	public boolean checkMouseHoveronAllItems(WebDriver driver)
 	{
 		String xpathOfItems =Constant.xpathOfItemByIndex;
 		String xpathOfAddToCartButtons=Constant.xpathAddToCartButtonByMouseHoverOnItemInIndexPage;
 		boolean res=false;
-		for(int index=Constant.addToCartButton1;index<=7;index++)
+		for(int index=Constant.addToCartButton1;index<=countNoOfItems(driver);index++)
 		{
 			element=driver.findElement(By.xpath(xpathOfItems));
-			System.out.println(xpathOfItems+""+index+""+element.getText());
 			performMouseHover(element);
 			element=element.findElement(By.xpath(xpathOfAddToCartButtons));
-			System.out.println(xpathOfAddToCartButtons+""+index+""+element.getText());
 			if(element.isDisplayed())
 			{
 				res=true;
@@ -209,5 +215,78 @@ public class TestUtil extends TestBase {
 		}
 		return res;
 	}
+	
+	public boolean validatePriceAddToCartMoreButtonDispalyedOrNot(WebDriver driver)
+	{
+		String xpathOfItems =Constant.xpathOfItemByIndex;
+		String xpathOfAddToCartButtons=Constant.xpathAddToCartButtonByMouseHoverOnItemInIndexPage;
+		boolean res=false;
+		for(int index=Constant.addToCartButton1;index<=countNoOfItems(driver);index++)
+		{
+			element=driver.findElement(By.xpath(xpathOfItems));
+			performMouseHover(element);
+			element=element.findElement(By.xpath(xpathOfAddToCartButtons));
+			WebElement buttonMore=driver.findElement(By.xpath(Constant.xpathQuickViewMoreButtonByIndexMouseHover));
+			WebElement textPrice=driver.findElement(By.xpath(Constant.xpathQuickViewItemPriceByIndexMouseHover));
+			if(element.isDisplayed() && buttonMore.isDisplayed() && textPrice.isDisplayed())
+			{
+				
+				res=true;
+				Log.info("Element is available");
+			}
+			else 
+			{
+				res=false;
+			}
+		}
+		return res;
+		
+	}
+	
+	public boolean checkMouseHoveringItemNameTextIsDispalyed(WebDriver driver)
+	{
+		
+		boolean res=false;
+		for(int index=Constant.addToCartButton1;index<=countNoOfItems(driver);index++)
+		{
+			element=driver.findElement(By.xpath(Constant.xpathQuickViewITemNameByIndexMouseHover));
+			if(element.isDisplayed())
+			{
+				
+				res=true;
+				Log.info("Element is available");
+			}
+			else 
+			{
+				res=false;
+			}
+		}
+		return res;
+	}
+	
+	public boolean checkQuickViewTextIsDiplayed()
+	{
+		String xpathOfItems =Constant.xpathOfItemByIndex;
+		String xpathClickItemForQuickViewByIndex=Constant.xpathClickItemForQuickViewByIndex;
+		boolean res=false;
+		for(int index=Constant.item1;index<=countNoOfItems(driver);index++)
+		{
+			element=driver.findElement(By.xpath(xpathOfItems));
+			performMouseHover(element);
+			element=element.findElement(By.xpath(xpathClickItemForQuickViewByIndex));
+			if(element.isDisplayed())
+			{
+				res=true;
+				Log.info("Element is available");
+			}
+			else 
+			{
+				res=false;
+			}
+		}
+		return res;
+	}
+	
+
 	
 }

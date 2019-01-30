@@ -22,6 +22,7 @@ import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
 import utilities.Constant;
+import utilities.ExcelUtils;
 import utilities.Log;
 import utilities.TestUtil;
 import base.TestBase;
@@ -32,6 +33,8 @@ public class APIndexPage extends TestBase{
 	WebElement itemNameQuickViewPopup;
 	@FindBy(xpath="//*[@id='our_price_display']")
 	WebElement itemPriceQuickViewPopUp;
+	@FindBy(xpath="//*[@id='homefeatured']/li[7]/div/div[2]/div[1]/span[1]")
+	WebElement discountountSeven;
 	
 		
 	//Initializing the page objects
@@ -79,4 +82,45 @@ public class APIndexPage extends TestBase{
 		return res;
 	}
 	
+	public boolean validatePriceAddToCartButtonAndMoreButtonIsDisplayed(WebDriver driver)
+	{
+		return util.validatePriceAddToCartMoreButtonDispalyedOrNot(driver);
+	}
+	
+	public boolean validateMouseHoveringItemNameTextIsDispalyed(WebDriver driver)
+	{
+		return util.checkMouseHoveringItemNameTextIsDispalyed(driver);
+	}
+	
+	public boolean validateNumberOfItemsInHomeFeatured(WebDriver driver) throws Exception{
+		Log.info("Setting up the Excel sheet for read the no of itens in home featured index page");
+		util.setTestData(Constant.pathTestData+Constant.fileTestData,Constant.sheet2);
+		Log.info("Reading the noOfItems by sending row and column in sheet 2");
+		String noOfItems=ExcelUtils.getCellData(11, 1);
+		System.out.println("No Of Items"+noOfItems);
+		int noOfItemsInt=Integer.parseInt(noOfItems);
+		if(util.countNoOfItems(driver)==noOfItemsInt)
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean validateQuickViewTextIsDiplayed(WebDriver driver)
+	{
+		Log.info("Calling check checkQuickViewTextIsDiplayed()");
+		return util.checkQuickViewTextIsDiplayed();
+	}
+	
+	public boolean validateOffer(WebDriver driver) throws InterruptedException
+	{
+		util.scrollDown();
+		Thread.sleep(5000);
+		if(discountountSeven.isDisplayed())
+		{
+			System.out.println(discountountSeven.getText());
+			return true;
+		}
+		return false;
+	}
 }

@@ -55,7 +55,7 @@ try{
 
    Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
 
-   String CellData = Cell.getStringCellValue();
+   String CellData = Cell.getStringCellValue().toString();
 
    return CellData;
 
