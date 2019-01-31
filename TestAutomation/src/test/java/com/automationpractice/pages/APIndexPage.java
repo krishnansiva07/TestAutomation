@@ -34,7 +34,7 @@ public class APIndexPage extends TestBase{
 	@FindBy(xpath="//*[@id='our_price_display']")
 	WebElement itemPriceQuickViewPopUp;
 	@FindBy(xpath="//*[@id='homefeatured']/li[7]/div/div[2]/div[1]/span[1]")
-	WebElement discountountSeven;
+	WebElement discountPriceItemtSeven;
 	
 		
 	//Initializing the page objects
@@ -116,9 +116,9 @@ public class APIndexPage extends TestBase{
 	{
 		util.scrollDown();
 		Thread.sleep(5000);
-		if(discountountSeven.isDisplayed())
+		if(discountPriceItemtSeven.isDisplayed())
 		{
-			System.out.println(discountountSeven.getText());
+			System.out.println(discountPriceItemtSeven.getText());
 			return true;
 		}
 		return false;

@@ -106,5 +106,34 @@ throw (e);
 }
 
 }
+    
+public Object[] getExcelTableArray(String filePath,String SheetName,int rowNum,int colNum,int noOfRows,int noOfColumns)
+{
+	
+	Object data[][]=null;
+	try{
+		setExcelFile(filePath,SheetName);
+		data=new String[noOfRows][noOfColumns];
+		
+		for(int row=0;row<noOfRows;row++)
+		{
+			for(int col=0;col<noOfColumns;col++)
+			{
+				data[row][col]=getCellData(rowNum, col);
+				
+			}
+			rowNum++;
+		}
+		return data;
+		
+	}
+	catch(Exception e)
+	{
+		System.out.println("Could not read the Excel sheet");
+		 
+		 e.printStackTrace();
+		 return data;
+	}
+}
 
 }

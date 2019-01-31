@@ -287,6 +287,12 @@ public class TestUtil extends TestBase {
 		return res;
 	}
 	
+	public boolean validateOfferPriceAndDiscount(int itemNo,WebDriver driver) throws Exception
+	{
+		util.setTestData(Constant.pathTestData+Constant.fileTestData,Constant.sheet2);
+		
+		return false;
+	}
 
 	
 }

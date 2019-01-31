@@ -4342,3 +4342,149 @@
 2019-01-30 07:42:41 INFO  Log:21 - Starting the Xtent Report for 10105_VerifyThatDiscountPercentageIsDisplayedAtFifthAndSeventhItemsBeforMouseHoveringOrNot()
 2019-01-30 07:42:41 INFO  Log:21 - After strting the test
 2019-01-30 07:42:47 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 06:57:50 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-31 06:57:52 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-31 06:57:52 INFO  Log:21 - After Adding System Info
+2019-01-31 06:57:52 INFO  Log:21 - After loading Config.xml
+2019-01-31 06:57:52 INFO  Log:21 - Extent Repeort Started
+2019-01-31 06:57:56 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-31 06:58:37 INFO  Log:21 - Launching the Chrome Browser
+2019-01-31 06:58:38 INFO  Log:21 - Starting the Xtent Report for test_10100_VerifyThatMouseHoverIsHappeningOnAllItems() method
+2019-01-31 06:58:38 INFO  Log:21 - After strting the test
+2019-01-31 06:58:38 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:39 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 06:58:40 INFO  Log:21 - Starting the Xtent Report for test_10101_VerifyThatWhileMouseHoveringPriceAddToCartAndMoreButtonsAreDisplayingOrNot()
+2019-01-31 06:58:40 INFO  Log:21 - After strting the test
+2019-01-31 06:58:41 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:41 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:41 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:41 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:41 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:42 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:42 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:42 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 06:58:43 INFO  Log:21 - Starting the Xtent Report for test_10102_VerifyThatWhileMouseHoveringItemNameTextIsDispalyedOrNot()
+2019-01-31 06:58:43 INFO  Log:21 - After strting the test
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - Element is available
+2019-01-31 06:58:44 INFO  Log:21 - test_10102_VerifyThatWhileMouseHoveringItemNameTextIsDispalyedOrNot() Passed
+2019-01-31 06:58:44 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 06:58:44 INFO  Log:21 - Starting the Xtent Report for test_10103_VerifyThatSevenItemsAreDisplayedInHomeFeatured()
+2019-01-31 06:58:44 INFO  Log:21 - After strting the test
+2019-01-31 06:58:44 INFO  Log:21 - Setting up the Excel sheet for read the no of itens in home featured index page
+2019-01-31 06:58:44 INFO  Log:21 - Reading the noOfItems by sending row and column in sheet 2
+2019-01-31 06:58:44 INFO  Log:21 - test_10103_VerifyThatSevenItemsAreDisplayedInHomeFeatured() Passed
+2019-01-31 06:58:44 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 06:58:44 INFO  Log:21 - Starting the Xtent Report for test_10104_verifyThatQuickViewTextIsDisplayedInAllItems()
+2019-01-31 06:58:44 INFO  Log:21 - After strting the test
+2019-01-31 06:58:44 INFO  Log:21 - Calling check checkQuickViewTextIsDiplayed()
+2019-01-31 06:58:45 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:45 INFO  Log:21 - Element is available
+2019-01-31 06:58:45 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:45 INFO  Log:21 - Element is available
+2019-01-31 06:58:45 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:45 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:45 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:45 INFO  Log:21 - Element is available
+2019-01-31 06:58:45 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:45 INFO  Log:21 - Element is available
+2019-01-31 06:58:46 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 06:58:46 INFO  Log:21 - Element is available
+2019-01-31 06:58:46 INFO  Log:21 - test_10104_verifyThatQuickViewTextIsDisplayedInAllItems() Passed
+2019-01-31 06:58:46 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 06:58:46 INFO  Log:21 - Starting the Xtent Report for 10105_VerifyThatDiscountPercentageIsDisplayedAtFifthAndSeventhItemsBeforMouseHoveringOrNot()
+2019-01-31 06:58:46 INFO  Log:21 - After strting the test
+2019-01-31 06:58:51 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 07:00:38 INFO  Log:21 - Before Entering Method Start get Property
+2019-01-31 07:00:39 INFO  Log:21 - After Entering Method Start getProperty
+2019-01-31 07:00:39 INFO  Log:21 - After Adding System Info
+2019-01-31 07:00:39 INFO  Log:21 - After loading Config.xml
+2019-01-31 07:00:39 INFO  Log:21 - Extent Repeort Started
+2019-01-31 07:00:41 INFO  Log:21 - After Reading Browser Name from TestData Excel
+2019-01-31 07:00:56 INFO  Log:21 - Launching the Chrome Browser
+2019-01-31 07:00:57 INFO  Log:21 - Starting the Xtent Report for test_10100_VerifyThatMouseHoverIsHappeningOnAllItems() method
+2019-01-31 07:00:57 INFO  Log:21 - After strting the test
+2019-01-31 07:00:57 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:57 INFO  Log:21 - Element is available
+2019-01-31 07:00:57 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:58 INFO  Log:21 - Element is available
+2019-01-31 07:00:58 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:58 INFO  Log:21 - Element is available
+2019-01-31 07:00:58 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:58 INFO  Log:21 - Element is available
+2019-01-31 07:00:58 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:58 INFO  Log:21 - Element is available
+2019-01-31 07:00:58 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:58 INFO  Log:21 - Element is available
+2019-01-31 07:00:58 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:58 INFO  Log:21 - Element is available
+2019-01-31 07:00:58 INFO  Log:21 - test_10100_VerifyThatMouseHoverIsHappeningOnAllItems() Passed
+2019-01-31 07:00:58 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 07:00:58 INFO  Log:21 - Starting the Xtent Report for test_10101_VerifyThatWhileMouseHoveringPriceAddToCartAndMoreButtonsAreDisplayingOrNot()
+2019-01-31 07:00:58 INFO  Log:21 - After strting the test
+2019-01-31 07:00:59 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:59 INFO  Log:21 - Element is available
+2019-01-31 07:00:59 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:59 INFO  Log:21 - Element is available
+2019-01-31 07:00:59 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:00:59 INFO  Log:21 - Element is available
+2019-01-31 07:00:59 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:00 INFO  Log:21 - Element is available
+2019-01-31 07:01:00 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:00 INFO  Log:21 - Element is available
+2019-01-31 07:01:00 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:00 INFO  Log:21 - Element is available
+2019-01-31 07:01:00 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:00 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - test_10101_VerifyThatWhileMouseHoveringPriceAddToCartAndMoreButtonsAreDisplayingOrNot() Passed
+2019-01-31 07:01:01 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 07:01:01 INFO  Log:21 - Starting the Xtent Report for test_10102_VerifyThatWhileMouseHoveringItemNameTextIsDispalyedOrNot()
+2019-01-31 07:01:01 INFO  Log:21 - After strting the test
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - Element is available
+2019-01-31 07:01:01 INFO  Log:21 - test_10102_VerifyThatWhileMouseHoveringItemNameTextIsDispalyedOrNot() Passed
+2019-01-31 07:01:01 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 07:01:01 INFO  Log:21 - Starting the Xtent Report for test_10103_VerifyThatSevenItemsAreDisplayedInHomeFeatured()
+2019-01-31 07:01:01 INFO  Log:21 - After strting the test
+2019-01-31 07:01:01 INFO  Log:21 - Setting up the Excel sheet for read the no of itens in home featured index page
+2019-01-31 07:01:01 INFO  Log:21 - Reading the noOfItems by sending row and column in sheet 2
+2019-01-31 07:01:01 INFO  Log:21 - test_10103_VerifyThatSevenItemsAreDisplayedInHomeFeatured() Passed
+2019-01-31 07:01:01 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 07:01:01 INFO  Log:21 - Starting the Xtent Report for test_10104_verifyThatQuickViewTextIsDisplayedInAllItems()
+2019-01-31 07:01:01 INFO  Log:21 - After strting the test
+2019-01-31 07:01:01 INFO  Log:21 - Calling check checkQuickViewTextIsDiplayed()
+2019-01-31 07:01:01 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - Mouse Hovering without click
+2019-01-31 07:01:02 INFO  Log:21 - Element is available
+2019-01-31 07:01:02 INFO  Log:21 - test_10104_verifyThatQuickViewTextIsDisplayedInAllItems() Passed
+2019-01-31 07:01:02 INFO  Log:21 - Validating the test result after test Method
+2019-01-31 07:01:02 INFO  Log:21 - Starting the Xtent Report for 10105_VerifyThatDiscountPercentageIsDisplayedAtFifthAndSeventhItemsBeforMouseHoveringOrNot()
+2019-01-31 07:01:02 INFO  Log:21 - After strting the test
+2019-01-31 07:01:07 INFO  Log:21 - Validating the test result after test Method

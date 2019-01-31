@@ -55,6 +55,8 @@ public class Constant extends TestBase{
 	public static final String cssSelectorForQuickViewCloseButton="body#index div.fancybox-overlay.fancybox-overlay-fixed > div > div > a";
 	public static final String xpathAddToCartButtonByMouseHoverOnItemInIndexPage="//div[@class='button-container']/a[@title='Add to cart']";
 	
+	//Before Mouse hovering item discount and original price xpath
+	public static final String xpathOfItemPriceAndDiscountPercentage="//*[@id='homefeatured']/li['+itemNo+']/div/div[1]/div/div[2]/span['+index+']";	
 			
 	public static final String nameOfItem1="Faded Short Sleeve T-shirts";
 	public static final String itemPrice1="$16.51";
