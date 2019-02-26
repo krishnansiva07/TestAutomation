@@ -49,15 +49,25 @@ public class Constant extends TestBase{
 	//Constant Selectors
 	public static final String xpathClickItemForQuickViewByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[2]/span";
 	public static final String xpathQuickViewItemPriceByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/div[2]/span";
-	public static final String xpathQuickViewITemNameByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[2]/h5/a";
+	//public static final String xpathQuickViewITemNameByIndexMouseHover="//*[@id='homefeatured']/li['"+index+"']/div/div[2]/h5/a";
 	public static final String xpathQuickViewMoreButtonByIndexMouseHover="//*[@id='homefeatured']/li['+index+']/div/div[2]/div[2]/a[2]/span";
 	public static final String xpathOfItemByIndex="//*[@id='homefeatured']/li['+index+']/div/div[1]/div/a[1]/img";
 	public static final String cssSelectorForQuickViewCloseButton="body#index div.fancybox-overlay.fancybox-overlay-fixed > div > div > a";
 	public static final String xpathAddToCartButtonByMouseHoverOnItemInIndexPage="//div[@class='button-container']/a[@title='Add to cart']";
+	public static final String xpathOfItemBeforeDiscount="//*[@id='homefeatured']/li[5]/div/div[2]/div[1]/span['+index+']";
+	public static final String xpathOfItemAfterDiscount="//*[@id='homefeatured']/li[5]/div/div[2]/div[1]/span['+index+']";
+	public static final String xpathOfItemDiscountPercentage="//*[@id='homefeatured']/li[5]/div/div[2]/div[1]/span['+index+']";
+
+	//After Mouse hovering fifth item discount and original price xpath
+	public static final String xpathAfterDiscountFifthItemPriceMouseHover = "//*[@id='homefeatured']/li[5]/div/div[1]/div/div[2]/span[1]";	
+	public static final String xpathBeforeDiscountFifthItemPriceMouseHover="//*[@id='homefeatured']/li[5]/div/div[1]/div/div[2]/span[2]";
+	public static final String xpathDiscountFifthPercentageMouseHover="//*[@id='homefeatured']/li[5]/div/div[1]/div/div[2]/span[3]";
 	
-	//Before Mouse hovering item discount and original price xpath
-	public static final String xpathOfItemPriceAndDiscountPercentage="//*[@id='homefeatured']/li['+itemNo+']/div/div[1]/div/div[2]/span['+index+']";	
-			
+	//After Mouse hovering Seventh item discount and original price xpath
+	public static final String xpathAfterDiscountSeventhItemPriceMouseHover="//*[@id='homefeatured']/li[7]/div/div[1]/div/div[2]/span[1]";
+	public static final String xpathbBeforeDiscountSeventhItemPriceMouseHover="//*[@id='homefeatured']/li[7]/div/div[1]/div/div[2]/span[2]";
+	public static final String xpathdiscountSeventhPercentageMouseHover="//*[@id='homefeatured']/li[7]/div/div[1]/div/div[2]/span[3]";
+	
 	public static final String nameOfItem1="Faded Short Sleeve T-shirts";
 	public static final String itemPrice1="$16.51";
 	

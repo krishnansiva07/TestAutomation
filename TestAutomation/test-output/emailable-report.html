@@ -31,20 +31,62 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">0</td><td class="numi">14.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">com.automationpractice.test.IndexPageQuicViewAsGuestUser</td><td><a href="#m1"><b>test_10100_VerifyThatMouseHoverIsHappeningOnAllItems</b>  </a></td><td class="numi">1</td><td>1548805599565</td><td class="numi">1341</td></tr><tr class="passedodd"><td><a href="#m2"><b>test_10101_VerifyThatWhileMouseHoveringPriceAddToCartAndMoreButtonsAreDisplayingOrNot</b>  </a></td><td class="numi">1</td><td>1548805600915</td><td class="numi">2282</td></tr><tr class="passedodd"><td><a href="#m3"><b>test_10102_VerifyThatWhileMouseHoveringItemNameTextIsDispalyedOrNot</b>  </a></td><td class="numi">1</td><td>1548805603205</td><td class="numi">669</td></tr><tr class="passedodd"><td><a href="#m4"><b>test_10103_VerifyThatSevenItemsAreDisplayedInHomeFeatured</b>  </a></td><td class="numi">1</td><td>1548805603878</td><td class="numi">2</td></tr>
+<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.automationpractice.test.NewTest</td><td><a href="#m1"><b>setUpReport</b>  </a></td><td class="numi">1</td><td>1549681295064</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">com.automationpractice.test.NewTest</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1549681309055</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>checkStatus</b>  </a></td><td class="numi">4</td><td>1549681308992</td><td class="numi">47</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">com.automationpractice.test.NewTest</td><td><a href="#m4"><b>f</b>  </a></td><td class="numi">1</td><td>1549681308992</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>idDispalyed</b>  </a></td><td class="numi">1</td><td>1549681309008</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m6"><b>logOff1</b>  </a></td><td class="numi">1</td><td>1549681309024</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m7"><b>logOff2</b>  </a></td><td class="numi">1</td><td>1549681309039</td><td class="numi">0</td></tr>
 </table>
-<h1>Test</h1>
-<h2 id="m1">com.automationpractice.test.IndexPageQuicViewAsGuestUser:test_10102_VerifyThatWhileMouseHoveringItemNameTextIsDispalyedOrNot</h2>
+<h1>Default test</h1>
+<h2 id="m1">com.automationpractice.test.NewTest:setUpReport</h2>
+<div style="padding-left:3em">
+<p>session not created
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9.09 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Siva-PC&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at base.TestBase.initialization(TestBase.java:44)
+<br/>at com.automationpractice.test.NewTest.setUpReport(NewTest.java:41)
+<br/>23 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.automationpractice.test.IndexPageQuicViewAsGuestUser:test_10101_VerifyThatWhileMouseHoveringPriceAddToCartAndMoreButtonsAreDisplayingOrNot</h2>
+<h2 id="m2">com.automationpractice.test.NewTest:tearDown</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.automationpractice.test.IndexPageQuicViewAsGuestUser:test_10100_VerifyThatMouseHoverIsHappeningOnAllItems</h2>
+<h2 id="m3">com.automationpractice.test.NewTest:checkStatus</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.automationpractice.test.IndexPageQuicViewAsGuestUser:test_10103_VerifyThatSevenItemsAreDisplayedInHomeFeatured</h2>
+<h2 id="m4">com.automationpractice.test.NewTest:checkStatus</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.automationpractice.test.NewTest:checkStatus</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.automationpractice.test.NewTest:checkStatus</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.automationpractice.test.NewTest:logOff1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.automationpractice.test.NewTest:logOff2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.automationpractice.test.NewTest:idDispalyed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.automationpractice.test.NewTest:f</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

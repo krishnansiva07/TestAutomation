@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.automationpractice.test.NewTest">
         <methods>
-          <include name="checkStatus"/>
-          <include name="tearDown"/>
+          <include name="logOff2"/>
+          <include name="logOff1"/>
           <include name="idDispalyed"/>
           <include name="setUpReport"/>
+          <include name="f"/>
         </methods>
       </class> <!-- com.automationpractice.test.NewTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -107,7 +107,7 @@ throw (e);
 
 }
     
-public Object[] getExcelTableArray(String filePath,String SheetName,int rowNum,int colNum,int noOfRows,int noOfColumns)
+public Object[][] getExcelTableArray(String filePath,String SheetName,int rowNum,int colNum,int noOfRows,int noOfColumns)
 {
 	
 	Object data[][]=null;
@@ -120,6 +120,7 @@ public Object[] getExcelTableArray(String filePath,String SheetName,int rowNum,i
 			for(int col=0;col<noOfColumns;col++)
 			{
 				data[row][col]=getCellData(rowNum, col);
+				System.out.println("Data"+rowNum+""+"Column"+col+data[row][col]);
 				
 			}
 			rowNum++;
