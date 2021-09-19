@@ -19,7 +19,7 @@ import base.TestBase;
 import com.automationpractice.pages.APIndexPage;
 
 public class IndexPageQuicViewAsGuestUser extends TestBase{
-
+	APIndexPage indexPage;
 	public ExcelUtils excelUtil;
 	public IndexPageQuicViewAsGuestUser() throws Exception {
 		super();

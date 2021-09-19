@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import com.automationpractice.pages.APIndexPage;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -27,7 +27,7 @@ public class TestBase {
 	public static TestUtil util;
 	public static Robot robot;
 	// public static Logger log;
-	public static APIndexPage indexPage;
+	
 
 	public TestBase() throws Exception {
 		// TODO Auto-generated constructor stub
@@ -54,12 +54,14 @@ public class TestBase {
 			driver.get(TestUtil.getURL());
 			TestUtil.maximizeBrowser(driver);
 			Log.info("Launching the firefox Browser");
+			
 
 		}
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Constant.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constant.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		Log.info("Implicit wait is applied");
 		return driver;
 	}
 }
