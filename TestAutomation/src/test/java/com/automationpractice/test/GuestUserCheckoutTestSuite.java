@@ -19,7 +19,7 @@ import base.TestBase;
 
 public class GuestUserCheckoutTestSuite extends TestBase{
 	
-	//APIndexPage indexPage;
+	APIndexPage indexPage;
 	public GuestUserCheckoutTestSuite() throws Exception
 	{
 		super();
