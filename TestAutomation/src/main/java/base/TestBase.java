@@ -54,12 +54,14 @@ public class TestBase {
 			driver.get(TestUtil.getURL());
 			TestUtil.maximizeBrowser(driver);
 			Log.info("Launching the firefox Browser");
+			
 
 		}
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Constant.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constant.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		Log.info("Implicit wait is applied");
 		return driver;
 	}
 }
